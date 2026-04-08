@@ -2,7 +2,7 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6KfkBvaY9Mz":
+      case "6ftmU17Z7Jx":
         Script1();
         break;
   }
@@ -25,7 +25,8 @@ fetch(modelUrl, {
         "Authorization": "Bearer " + apiToken,
         "Content-Type": "application/json"
     },
-    body: JSON.stringify({inputs: userMessage})
+    body: JSON.stringify({ inputs: userMessage }),
+    mode: 'cors' // Tambahkan baris ini
 })
 .then(response => response.json())
 .then(data => {
